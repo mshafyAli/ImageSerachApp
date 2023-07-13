@@ -11,27 +11,49 @@ body{
     line-height: 1.6;
 }
 h1{
-    font-size: 48px;
-    font-weight: bold;
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    margin: 40px 0 40px 0;
+    text-align: center;
+    /* same margin formation */
+    /* margin: 100px 0 50px 0; */
+    margin: 100px auto 50px;
+    font-weight: 600;
 }
 form{
+    width: 90%;
+    max-width: 600px;
+    height: 80px;
+    background: #434989;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    /* justify-content: center; */
 }
-#SerachInput{
+form #SerachInput{
+    flex: 1;
+    height: 100%; 
     border: 0;
     outline: 0;
-    background-color: #ebfffc;
-    color:#555;
-    border-radius: 20%;
-    width: 30%;
-    height: 60px;
-    padding: 0 20px;
-    font-size: 15px;
+    background: transparent;
+    color: #fff;
+    padding: 0 30px;
+    font-size: 20px;
 
+}
+form #SearchButton{
+    padding: 0 40px;
+    height: 100%;
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    outline: 0;
+    border: 0;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    cursor: pointer;
+    /* border-radius: 8px; */
+}
+
+::placeholder{
+    color: #fff;
+    font-size: 20px;
 }
